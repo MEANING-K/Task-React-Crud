@@ -1,60 +1,25 @@
-import { Component } from "react";
-import "./App.css";
-import ExpenseForm from "./components/ExpenseForm";
-import ExpenseList from "./components/ExpenseList";
+import logo from './logo.svg';
+import './App.css';
 
-class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      expenses: [
-        { id: 1, charge: "렌트비", amount: 1600 },
-        { id: 2, charge: "교통비", amount: 700 },
-        { id: 3, charge: "식비", amount: 1200 },
-      ],
-    };
-  }
-
-  handleDelete = (id) => {
-    console.log(id);
-    const newExpenses = this.state.expenses.filter(
-      (expense) => expense.id !== id
-    );
-    console.log(newExpenses);
-    this.setState({ expenses: newExpenses });
-  };
-
-  render() {
-    return (
-      <main className="main-container">
-        <h1>예산 계산기</h1>
-        <div
-          style={{ width: "100%", backgroundColor: "white", padding: "1rem" }}
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          {/* Expense Form */}
-          <ExpenseForm />
-        </div>
-
-        <div
-          style={{ width: "100%", backgroundColor: "white", padding: "1rem" }}
-        >
-          {/* Expense List */}
-          <ExpenseList
-            initialExpenses={this.state.expenses}
-            handleDelete={this.handleDelete}
-          />
-        </div>
-
-        <div
-          style={{ display: "flex", justifyContent: "end", marginTop: "1rem" }}
-        >
-          <p style={{ fontSize: "2rem" }}>
-            총지출:
-            <span>원</span>
-          </p>
-        </div>
-      </main>
-    );
-  }
+          Learn React
+        </a>
+      </header>
+    </div>
+  );
 }
+
 export default App;
