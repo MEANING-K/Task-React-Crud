@@ -35,6 +35,9 @@ class ExpenseItem extends Component {
         this.setState({
             isEditing: false,
         });
+
+        // 수정된 내용을 부모 컴포넌트에 전달하여 총지출 값에 반영합니다.
+        this.props.onEdit(expense.id, expense);
     };
 
     render() {

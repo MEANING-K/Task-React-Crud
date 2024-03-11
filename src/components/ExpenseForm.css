@@ -25,9 +25,9 @@ label {
 }
 
 .btn {
-    background-color: rgb(162, 128, 85);
+    background-color: rgb(2, 7, 21);
+    color: #F5F5F5;
     padding: 8px;
     border: none;
     letter-spacing: 0.5px;
-    width: 110px;
 }

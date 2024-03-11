@@ -1,3 +1,9 @@
+리액트를 이용해서 CRUD 앱 만들기 과제 완성본입니다.
+
+![리액트를 이용해서 CRUD 앱 만들기](./Thumbnail.gif)
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

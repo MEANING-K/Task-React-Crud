@@ -44,7 +44,7 @@ background-color: var(--mainWhite);
 }
 
 .clear-btn {
-    color: green;
+    color: rgb(126, 0, 0);
 }
 
 .edit-btn {
