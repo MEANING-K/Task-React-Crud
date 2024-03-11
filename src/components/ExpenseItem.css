@@ -1,5 +1,7 @@
+
+
 .item {
-    background-color: var(--mainWhite);
+background-color: var(--mainWhite);
     line-height: 1.5rem;
     padding: 10px 20px;
     margin-bottom: 1rem;
@@ -7,6 +9,8 @@
     display: flex;
     justify-content: space-between;
     transition: all 0.3s linear;
+    width: 100%;
+    max-width: 800px;
 }
 
 .item:hover {
@@ -40,9 +44,9 @@
 }
 
 .clear-btn {
-    color: var(--mainRed);
+    color: green;
 }
 
 .edit-btn {
-    color: var(--mainGreen);
+    color: rgb(2, 7, 21);
 }
